@@ -37,6 +37,7 @@ export default class {
       .get()
       .then(snapshot => {
         const bills = snapshot.docs
+          .sort((a, b) => {return new Date(a.data().date) - new Date(b.data().date)}) // Trie les données par leur entrée "date", des plus anciennes aux plus récentes
           .map(doc => {
             try {
               return {
@@ -56,7 +57,6 @@ export default class {
             }
           })
           .filter(bill => bill.email === userEmail)
-          console.log('length', bills.length)
         return bills
       })
       .catch(error => error)
