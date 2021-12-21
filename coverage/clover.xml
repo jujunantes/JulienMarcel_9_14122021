@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1640088754834" clover="3.2.0">
-  <project timestamp="1640088754834" name="All files">
-    <metrics statements="225" coveredstatements="147" conditionals="102" coveredconditionals="74" methods="70" coveredmethods="38" elements="397" coveredelements="259" complexity="0" loc="225" ncloc="225" packages="3" files="16" classes="16"/>
+<coverage generated="1640095045464" clover="3.2.0">
+  <project timestamp="1640095045464" name="All files">
+    <metrics statements="231" coveredstatements="147" conditionals="104" coveredconditionals="74" methods="70" coveredmethods="38" elements="405" coveredelements="259" complexity="0" loc="231" ncloc="231" packages="3" files="16" classes="16"/>
     <package name="constants">
       <metrics statements="8" coveredstatements="8" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
       <file name="routes.js" path="C:\Users\jul_m\JulienMarcel_9_14122021\src\constants\routes.js">
@@ -20,7 +20,7 @@
       </file>
     </package>
     <package name="containers">
-      <metrics statements="189" coveredstatements="113" conditionals="67" coveredconditionals="41" methods="55" coveredmethods="23"/>
+      <metrics statements="195" coveredstatements="113" conditionals="69" coveredconditionals="41" methods="55" coveredmethods="23"/>
       <file name="Bills.js" path="C:\Users\jul_m\JulienMarcel_9_14122021\src\containers\Bills.js">
         <metrics statements="29" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="11" coveredmethods="0"/>
         <line num="7" count="0" type="stmt"/>
@@ -39,19 +39,19 @@
         <line num="25" count="0" type="stmt"/>
         <line num="26" count="0" type="stmt"/>
         <line num="27" count="0" type="stmt"/>
-        <line num="32" count="0" type="stmt"/>
-        <line num="33" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="35" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="40" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="36" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="37" count="0" type="stmt"/>
         <line num="41" count="0" type="stmt"/>
-        <line num="43" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
         <line num="44" count="0" type="stmt"/>
-        <line num="53" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
         <line num="54" count="0" type="stmt"/>
-        <line num="62" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
         <line num="63" count="0" type="stmt"/>
-        <line num="65" count="0" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
       </file>
       <file name="Dashboard.js" path="C:\Users\jul_m\JulienMarcel_9_14122021\src\containers\Dashboard.js">
         <metrics statements="78" coveredstatements="70" conditionals="45" coveredconditionals="37" methods="25" coveredmethods="16"/>
@@ -193,7 +193,7 @@
         <line num="13" count="2" type="stmt"/>
       </file>
       <file name="NewBill.js" path="C:\Users\jul_m\JulienMarcel_9_14122021\src\containers\NewBill.js">
-        <metrics statements="30" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="8" coveredmethods="0"/>
+        <metrics statements="36" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="8" coveredmethods="0"/>
         <line num="7" count="0" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
@@ -208,22 +208,28 @@
         <line num="19" count="0" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
+        <line num="22" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
         <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
         <line num="34" count="0" type="stmt"/>
         <line num="35" count="0" type="stmt"/>
         <line num="36" count="0" type="stmt"/>
-        <line num="49" count="0" type="stmt"/>
-        <line num="50" count="0" type="stmt"/>
-        <line num="54" count="0" type="stmt"/>
-        <line num="55" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="56" count="0" type="stmt"/>
-        <line num="60" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
         <line num="62" count="0" type="stmt"/>
+        <line num="63" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="70" count="0" type="stmt"/>
       </file>
     </package>
     <package name="views">

@@ -19,7 +19,8 @@ export default class NewBill {
     const file = this.document.querySelector(`input[data-testid="file"]`).files[0]
     const filePath = e.target.value.split(/\\/g)
     const fileName = filePath[filePath.length-1]
-    this.firestore
+    if(fileName.split(".").pop().toLowerCase().match(/(\.jpg|\.jpeg|\.png|\.bmp|\.gif)$/i) ) {
+      this.firestore
       .storage
       .ref(`justificatifs/${fileName}`)
       .put(file)
@@ -28,6 +29,13 @@ export default class NewBill {
         this.fileUrl = url
         this.fileName = fileName
       })
+      return true
+    } else {
+      alert("Seules les pièces jointes aux formats jpeg, jpeg, png, bmp ou gif sont autorisées.");
+      e.target.value = ''
+      this.fileUrl = null
+      this.fileName = null
+    }
   }
   handleSubmit = e => {
     e.preventDefault()
