@@ -13,6 +13,7 @@ describe("Given I am connected as an employee", () => {
       const html = BillsUI({ data: bills })
       document.body.innerHTML = html
       let dates = screen.getAllByText(/^(19|20)\d\d[- /.](0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])$/i).map(a => a.innerHTML).sort(function (a, b) {
+        // Il faut aussi trier les données de tests, comme pour les données réelles !
         if (a > b) {
             return -1;
         }
@@ -21,10 +22,8 @@ describe("Given I am connected as an employee", () => {
         }
         return 0;
     })
-      console.log('dates : ' + dates)
       const antiChrono = (a, b) => ((a < b) ? 1 : -1)
       const datesSorted = [...dates].sort(antiChrono)
-      console.log('datesSorted : ' + datesSorted)
       expect(dates).toEqual(datesSorted)
     })
   })
