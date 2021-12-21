@@ -39,7 +39,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/10</span>
+                <span class='fraction'>0/11</span>
             </div>
         
             
@@ -121,7 +121,10 @@
 <a name='L62'></a><a href='#L62'>62</a>
 <a name='L63'></a><a href='#L63'>63</a>
 <a name='L64'></a><a href='#L64'>64</a>
-<a name='L65'></a><a href='#L65'>65</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -151,6 +154,15 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -159,12 +171,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -178,7 +184,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -215,6 +221,7 @@ export default class {
   }
 &nbsp;
   // not need to cover this function by tests
+&nbsp;
   getBills = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
     const userEmail = <span class="cstat-no" title="statement not covered" >localStorage.getItem('user') ?</span>
       JSON.parse(localStorage.getItem('user')).email : ""
@@ -224,11 +231,13 @@ export default class {
       .get()
       .then(<span class="fstat-no" title="function not covered" >sn</span>apshot =&gt; {
         const bills = <span class="cstat-no" title="statement not covered" >snapshot.docs</span>
+          .sort(<span class="fstat-no" title="function not covered" >(a</span>, b) =&gt; {<span class="cstat-no" title="statement not covered" >return new Date(b.data().date) - new Date(a.data().date)}</span>) // Trie les données par leur entrée "date", des plus anciennes aux plus récentes
           .map(<span class="fstat-no" title="function not covered" >do</span>c =&gt; {
 <span class="cstat-no" title="statement not covered" >            try {</span>
 <span class="cstat-no" title="statement not covered" >              return {</span>
                 ...doc.data(),
-                date: formatDate(doc.data().date),
+                //date: formatDate(doc.data().date),
+                date: doc.data().date, // Inversion avec la ligne 56, pour résoudre le console.log de la ligne 52
                 status: formatStatus(doc.data().status)
               }
             } catch(e) {
@@ -237,13 +246,13 @@ export default class {
 <span class="cstat-no" title="statement not covered" >              console.log(e,'for',doc.data())</span>
 <span class="cstat-no" title="statement not covered" >              return {</span>
                 ...doc.data(),
-                date: doc.data().date,
+                //date: doc.data().date,
+                date: formatDate(doc.data().date),
                 status: formatStatus(doc.data().status)
               }
             }
           })
           .filter(<span class="fstat-no" title="function not covered" >bi</span>ll =&gt; <span class="cstat-no" title="statement not covered" >bill.email === userEmail)</span>
-<span class="cstat-no" title="statement not covered" >          console.log('length', bills.length)</span>
 <span class="cstat-no" title="statement not covered" >        return bills</span>
       })
       .catch(<span class="fstat-no" title="function not covered" >er</span>ror =&gt; <span class="cstat-no" title="statement not covered" >error)</span>
@@ -256,7 +265,7 @@ export default class {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Wed Dec 15 2021 08:12:35 GMT+0100 (heure normale d’Europe centrale)
+                at Tue Dec 21 2021 13:06:47 GMT+0100 (heure normale d’Europe centrale)
             </div>
         </div>
         <script src="../prettify.js"></script>

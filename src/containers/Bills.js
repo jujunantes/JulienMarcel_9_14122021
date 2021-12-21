@@ -28,6 +28,7 @@ export default class {
   }
 
   // not need to cover this function by tests
+
   getBills = () => {
     const userEmail = localStorage.getItem('user') ?
       JSON.parse(localStorage.getItem('user')).email : ""
@@ -37,12 +38,13 @@ export default class {
       .get()
       .then(snapshot => {
         const bills = snapshot.docs
-          .sort((a, b) => {return new Date(a.data().date) - new Date(b.data().date)}) // Trie les données par leur entrée "date", des plus anciennes aux plus récentes
+          .sort((a, b) => {return new Date(b.data().date) - new Date(a.data().date)}) // Trie les données par leur entrée "date", des plus anciennes aux plus récentes
           .map(doc => {
             try {
               return {
                 ...doc.data(),
-                date: formatDate(doc.data().date),
+                //date: formatDate(doc.data().date),
+                date: doc.data().date, // Inversion avec la ligne 56, pour résoudre le console.log de la ligne 52
                 status: formatStatus(doc.data().status)
               }
             } catch(e) {
@@ -51,7 +53,8 @@ export default class {
               console.log(e,'for',doc.data())
               return {
                 ...doc.data(),
-                date: doc.data().date,
+                //date: doc.data().date,
+                date: formatDate(doc.data().date),
                 status: formatStatus(doc.data().status)
               }
             }
