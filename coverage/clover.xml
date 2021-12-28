@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1640712846089" clover="3.2.0">
-  <project timestamp="1640712846089" name="All files">
-    <metrics statements="219" coveredstatements="166" conditionals="100" coveredconditionals="78" methods="64" coveredmethods="43" elements="383" coveredelements="287" complexity="0" loc="219" ncloc="219" packages="3" files="16" classes="16"/>
+<coverage generated="1640719686122" clover="3.2.0">
+  <project timestamp="1640719686123" name="All files">
+    <metrics statements="214" coveredstatements="192" conditionals="98" coveredconditionals="81" methods="61" coveredmethods="46" elements="373" coveredelements="319" complexity="0" loc="214" ncloc="214" packages="3" files="16" classes="16"/>
     <package name="constants">
       <metrics statements="8" coveredstatements="8" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
       <file name="routes.js" path="C:\Users\jul_m\JulienMarcel_9_14122021\src\constants\routes.js">
         <metrics statements="8" coveredstatements="8" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
         <line num="6" count="6" type="stmt"/>
         <line num="13" count="6" type="stmt"/>
-        <line num="14" count="14" type="cond" truecount="5" falsecount="0"/>
+        <line num="14" count="16" type="cond" truecount="5" falsecount="0"/>
         <line num="16" count="3" type="stmt"/>
-        <line num="18" count="3" type="stmt"/>
+        <line num="18" count="5" type="stmt"/>
         <line num="20" count="2" type="stmt"/>
         <line num="22" count="5" type="stmt"/>
         <line num="24" count="1" type="stmt"/>
@@ -20,7 +20,7 @@
       </file>
     </package>
     <package name="containers">
-      <metrics statements="183" coveredstatements="130" conditionals="65" coveredconditionals="43" methods="49" coveredmethods="28"/>
+      <metrics statements="178" coveredstatements="156" conditionals="63" coveredconditionals="46" methods="46" coveredmethods="31"/>
       <file name="Bills.js" path="C:\Users\jul_m\JulienMarcel_9_14122021\src\containers\Bills.js">
         <metrics statements="16" coveredstatements="16" conditionals="4" coveredconditionals="2" methods="5" coveredmethods="5"/>
         <line num="7" count="2" type="stmt"/>
@@ -172,52 +172,47 @@
       </file>
       <file name="Logout.js" path="C:\Users\jul_m\JulienMarcel_9_14122021\src\containers\Logout.js">
         <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="5" count="8" type="stmt"/>
-        <line num="6" count="8" type="stmt"/>
-        <line num="7" count="8" type="stmt"/>
-        <line num="8" count="8" type="stmt"/>
-        <line num="11" count="8" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="6" count="10" type="stmt"/>
+        <line num="7" count="10" type="stmt"/>
+        <line num="8" count="10" type="stmt"/>
+        <line num="11" count="10" type="stmt"/>
         <line num="12" count="2" type="stmt"/>
         <line num="13" count="2" type="stmt"/>
       </file>
       <file name="NewBill.js" path="C:\Users\jul_m\JulienMarcel_9_14122021\src\containers\NewBill.js">
-        <metrics statements="36" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="8" coveredmethods="0"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="22" count="0" type="cond" truecount="0" falsecount="2"/>
+        <metrics statements="31" coveredstatements="26" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="3"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="23" count="0" type="stmt"/>
         <line num="27" count="0" type="stmt"/>
         <line num="29" count="0" type="stmt"/>
         <line num="30" count="0" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="35" count="0" type="stmt"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="37" count="0" type="stmt"/>
-        <line num="40" count="0" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
-        <line num="43" count="0" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
-        <line num="57" count="0" type="stmt"/>
-        <line num="58" count="0" type="stmt"/>
-        <line num="62" count="0" type="stmt"/>
-        <line num="63" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="64" count="0" type="stmt"/>
-        <line num="68" count="0" type="stmt"/>
-        <line num="70" count="0" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="41" count="2" type="stmt"/>
+        <line num="42" count="2" type="stmt"/>
+        <line num="43" count="2" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
+        <line num="57" count="2" type="stmt"/>
+        <line num="58" count="2" type="stmt"/>
       </file>
     </package>
     <package name="views">
@@ -231,13 +226,13 @@
         <line num="7" count="7" type="stmt"/>
         <line num="8" count="8" type="stmt"/>
         <line num="22" count="7" type="stmt"/>
-        <line num="23" count="8" type="cond" truecount="4" falsecount="0"/>
-        <line num="28" count="11" type="stmt"/>
-        <line num="45" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="23" count="9" type="cond" truecount="4" falsecount="0"/>
+        <line num="28" count="15" type="stmt"/>
+        <line num="45" count="15" type="cond" truecount="2" falsecount="0"/>
         <line num="46" count="1" type="stmt"/>
-        <line num="47" count="10" type="cond" truecount="2" falsecount="0"/>
-        <line num="48" count="3" type="stmt"/>
-        <line num="51" count="7" type="stmt"/>
+        <line num="47" count="14" type="cond" truecount="2" falsecount="0"/>
+        <line num="48" count="5" type="stmt"/>
+        <line num="51" count="9" type="stmt"/>
       </file>
       <file name="DashboardFormUI.js" path="C:\Users\jul_m\JulienMarcel_9_14122021\src\views\DashboardFormUI.js">
         <metrics statements="2" coveredstatements="2" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
@@ -254,7 +249,7 @@
       </file>
       <file name="ErrorPage.js" path="C:\Users\jul_m\JulienMarcel_9_14122021\src\views\ErrorPage.js">
         <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="5" count="8" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
       </file>
       <file name="LoadingPage.js" path="C:\Users\jul_m\JulienMarcel_9_14122021\src\views\LoadingPage.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -266,15 +261,15 @@
       </file>
       <file name="NewBillUI.js" path="C:\Users\jul_m\JulienMarcel_9_14122021\src\views\NewBillUI.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="5" count="3" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
       </file>
       <file name="VerticalLayout.js" path="C:\Users\jul_m\JulienMarcel_9_14122021\src\views\VerticalLayout.js">
         <metrics statements="6" coveredstatements="6" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
-        <line num="7" count="29" type="stmt"/>
-        <line num="8" count="29" type="cond" truecount="2" falsecount="0"/>
-        <line num="9" count="14" type="stmt"/>
-        <line num="11" count="29" type="cond" truecount="4" falsecount="0"/>
-        <line num="12" count="8" type="stmt"/>
+        <line num="7" count="34" type="stmt"/>
+        <line num="8" count="34" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="19" type="stmt"/>
+        <line num="11" count="34" type="cond" truecount="4" falsecount="0"/>
+        <line num="12" count="13" type="stmt"/>
         <line num="29" count="21" type="stmt"/>
       </file>
     </package>

@@ -31,7 +31,7 @@ export default class NewBill {
       })
       return true
     } else {
-      alert("Seules les pièces jointes aux formats jpeg, jpeg, png, bmp ou gif sont autorisées.");
+      alert("Seules les pièces jointes aux formats jpeg, jpeg, png, bmp ou gif sont autorisées.")
       e.target.value = ''
       this.fileUrl = null
       this.fileName = null
@@ -59,6 +59,7 @@ export default class NewBill {
   }
 
   // not need to cover this function by tests
+  /* istanbul ignore next */
   createBill = (bill) => {
     if (this.firestore) {
       this.firestore
