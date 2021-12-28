@@ -15,4 +15,4 @@ describe('When I am on Bills page but there is an error',()=>{
         document.body.innerHTML = html
         expect(screen.getAllByText('Erreur')).toBeTruthy()
       })
-  })
+})

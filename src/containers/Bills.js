@@ -25,9 +25,8 @@ export default class {
     const imgWidth = Math.floor($('#modaleFile').width() * 0.5)
     $('#modaleFile').find(".modal-body").html(`<div style='text-align: center;'><img width=${imgWidth} src=${billUrl} /></div>`)
     $('#modaleFile').modal('show')
-    //if(typeof $('#modalFile').modal === "function")$('#modaleFile').modal('show')
   }
-
+  
   // not need to cover this function by tests
 
   getBills = () => {
@@ -41,15 +40,13 @@ export default class {
         console.log(snapshot.docs.length)
         let bills = snapshot.docs
           .sort((a, b) => {
-            //console.log('a.data().date : ' + a.data().date + ', b.data().date : ' + b.data().date)
-            return new Date(a.data().date) - new Date(b.data().date)}
-            ) // Trie les données par leur entrée "date", des plus anciennes aux plus récentes
+            return new Date(b.data().date) - new Date(a.data().date)}
+            ) // Trie les données par leur entrée "date", des plus récentes aux plus anciennes
           .map(doc => {
             try {
               return {
                 ...doc.data(),
-                //date: formatDate(doc.data().date),
-                date: doc.data().date, // Inversion avec la ligne 58, pour résoudre le console.log de la ligne 54
+                date: doc.data().date, // Inversion avec la ligne 59, pour résoudre le console.log de la ligne 56
                 status: formatStatus(doc.data().status)
               }
             } catch(e) {
@@ -58,7 +55,6 @@ export default class {
               console.log(e,'for',doc.data())
               return {
                 ...doc.data(),
-                //date: doc.data().date,
                 date: formatDate(doc.data().date),
                 status: formatStatus(doc.data().status)
               }
